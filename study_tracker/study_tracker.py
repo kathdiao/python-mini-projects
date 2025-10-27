@@ -24,27 +24,33 @@ while True:
         if not topics:
             print("No topics to edit")
         else:
-            edited_topic = int(input("Enter topic id to edit: "))
-            #ichecheck kung valid ba yung number
-            if 1 <= edited_topic <= len(topics):
-                new_topic = input("Enter new topic: ")
-                #replace old topics sa new
-                topics[edited_topic -1] = new_topic
-                print("Topic updated successfully!")
-            else:
-                print("Invalid topic id")
+            try:
+                edited_topic = int(input("Enter topic id to edit: "))
+                #ichecheck kung valid ba yung number
+                if 1 <= edited_topic <= len(topics):
+                    new_topic = input("Enter new topic: ")
+                    #replace old topics sa new
+                    topics[edited_topic -1] = new_topic
+                    print("Topic updated successfully!")
+                else:
+                    print("Invalid topic id")
+            except ValueError:
+                print("Enter valid topic id")
 
     elif choice == "4":
-        if not topics:
-            print("No topics to edit")
-        else:
-            delete = int(input("Enter topic id you want to delete: "))
-            if 1 <= delete <= len(topics):
-                #to delete yung correct topic
-                index = topics.pop(delete - 1)
-                print(f"'{index}' has been deleted.")
+        try:
+            if not topics:
+                print("No topics to delete")
             else:
-                print("Invalid topic id")
+                delete = int(input("Enter topic id you want to delete: "))
+                if 1 <= delete <= len(topics):
+                    #to delete yung correct topic
+                    index = topics.pop(delete - 1)
+                    print(f"'{index}' has been deleted.")
+                else:
+                    print("Invalid topic id")
+        except ValueError:
+            print("Enter valid topic id")
+
     elif choice == "5":
         break
-
