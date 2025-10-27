@@ -31,6 +31,8 @@ All projects are terminal-based and focus on fundamental Python concepts like lo
    - Simple arithmetic calculator.
    - Practice with user input, conditionals, and formatting outputs.
 
+7. **Study Tracker**
+   - Simple study tracker just to practice CRUD.
 ---
 
 ## Notes
