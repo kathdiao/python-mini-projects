@@ -33,6 +33,9 @@ All projects are terminal-based and focus on fundamental Python concepts like lo
 
 7. **Study Tracker**
    - Simple study tracker just to practice CRUD.
+
+8. **Simple Quiz Game**
+   - A basic quiz game that tests knowledge through multiple questions and displays the final score.
 ---
 
 ## Notes
