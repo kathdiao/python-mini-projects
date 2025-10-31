@@ -2,8 +2,11 @@ print("Welcome to Quiz Game!")
 question = input("Do you want to play?")
 score = 0
 
-if question.lower() == "yes":
+if question.lower() != "yes":
+    quit()
+else:
     print("Let's play")
+
     answer = input("What does RAM stand for? ")
     if answer.lower() == "random access memory":
         score += 1
@@ -47,7 +50,4 @@ if question.lower() == "yes":
         print(f"Total Score: {score}/5")
     else:
         print("Incorrect!")
-        print(f"Score: {score}/5")
-else:
-    print("Exiting...")
-    quit()
+        print(f"Total Score: {score}/5")
