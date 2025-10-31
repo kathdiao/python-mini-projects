@@ -12,8 +12,9 @@ else:
         score += 1
         print("Correct!")
         print(f"Score: {score}/5")
+
     else:
-        print("Incorrect!")
+        print("Incorrect! \nThanks for playing!")
         print(f"Score: {score}/5")
 
     answer = input("What does ROM stand for? ")
@@ -22,7 +23,7 @@ else:
         print("Correct!")
         print(f"Score: {score}/5")
     else:
-        print("Incorrect!")
+        print("Incorrect! \nThanks for playing!")
         print(f"Score: {score}/5")
 
     answer = input("What does CPU stand for? ")
@@ -31,7 +32,7 @@ else:
         print("Correct!")
         print(f"Score: {score}/5")
     else:
-        print("Incorrect!")
+        print("Incorrect! \nThanks for playing!")
         print(f"Score: {score}/5")
 
     answer = input("What does SSD stand for? ")
@@ -40,14 +41,15 @@ else:
         print("Correct!")
         print(f"Score: {score}/5")
     else:
-        print("Incorrect!")
+        print("Incorrect! \nThanks for playing!")
         print(f"Score: {score}/5")
 
     answer = input("What does HDD stand for? ")
     if answer.lower() == "hard disk drive":
         score += 1
         print("Congrats, you got it!")
-        print(f"Total Score: {score}/5")
+        print(f"Score: {score}/5")
     else:
-        print("Incorrect!")
-        print(f"Total Score: {score}/5")
+        print("Incorrect! \nThanks for playing!")
+        print(f"Score: {score}/5")
+        print(f"You got {(score + (score / 5) * 100)}%")
