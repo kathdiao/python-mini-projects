@@ -37,8 +37,11 @@ All projects are terminal-based and focus on fundamental Python concepts like lo
 8. **Simple Quiz Game**
    - A basic quiz game that tests knowledge through multiple questions and displays the final score.
    
-9. **Number Guessing game**
+9. **Number Guessing Game**
    - Practices concepts like loops, conditionals, random number generation, and user input validation.
+
+10 **Rock Paper Scissors Game**
+    - Practices concepts like loops, conditionals, random choice generation, user input handling, and basic game logic (win/lose/tie scenarios).
 ---
 
 ## Notes
