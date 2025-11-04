@@ -8,40 +8,41 @@ All projects are terminal-based and focus on fundamental Python concepts like lo
 ## Projects
 
 1. **Task/To-Do List**  
-   - Add, view, edit, and delete tasks.
+   - Add, view, edit, and delete tasks.  
    - Practice using loops, conditionals, and lists.
 
 2. **Grade Checker**  
-   - Input student grades and calculate results.
+   - Input student grades and calculate results.  
    - Focus on conditionals and user input validation.
 
 3. **Login System**  
-   - Simple username and password login simulation.
+   - Simple username and password login simulation.  
    - Demonstrates conditional checks and loops.
 
 4. **Movies (While Loop)**  
-   - Add, view, edit, and delete movies using a simple while loop.
+   - Add, view, edit, and delete movies using a simple while loop.  
    - Introduces basic CRUD operations.
 
 5. **Movies (With Functions)**  
-   - Same as above but organized using functions for cleaner code.
+   - Same as above but organized using functions for cleaner code.  
    - Demonstrates reusable code and modularity.
 
 6. **Calculator**  
-   - Simple arithmetic calculator.
+   - Simple arithmetic calculator.  
    - Practice with user input, conditionals, and formatting outputs.
 
-7. **Study Tracker**
+7. **Study Tracker**  
    - Simple study tracker just to practice CRUD.
 
-8. **Simple Quiz Game**
+8. **Simple Quiz Game**  
    - A basic quiz game that tests knowledge through multiple questions and displays the final score.
-   
-9. **Number Guessing Game**
+
+9. **Number Guessing Game**  
    - Practices concepts like loops, conditionals, random number generation, and user input validation.
 
-10 **Rock Paper Scissors Game**
+10. **Rock Paper Scissors Game**  
     - Practices concepts like loops, conditionals, random choice generation, user input handling, and basic game logic (win/lose/tie scenarios).
+
 ---
 
 ## Notes
