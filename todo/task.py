@@ -1,12 +1,16 @@
 task = []
 while True:
-    print("\n1. Add Task\n2. View Tasks\n3. Remove Task \n4. Exit")
-    #("\n1.) for choices lang
+    print("1. Add Task")
+    print("2. View Tasks")
+    print("3. Remove Task")
+    print("4. Exit")
+
     choice = input("Enter your choice: ")
+
     if choice == "1":
         todo = input("Enter Task Name: ")
         task.append(todo)
-        print("\nTask added")
+        print("Task added")
     elif choice == "2":
         print("All tasks: ")
         counter = 1
@@ -18,7 +22,7 @@ while True:
         question = int(input("Which task would you like to remove?: "))
         index = question - 1
         task.pop(index)
-        print("\nTask removed")
+        print("Task removed")
     elif choice == "4":
         print("Exiting...")
         break

@@ -43,6 +43,8 @@ All projects are terminal-based and focus on fundamental Python concepts like lo
 10. **Rock Paper Scissors Game**  
     - Practices concepts like loops, conditionals, random choice generation, user input handling, and basic game logic (win/lose/tie scenarios).
 
+11. **Basic Dictionary Register Simulation**
+    - Simulates a simple user registration using dictionaries with basic input validation.
 ---
 
 ## Notes
