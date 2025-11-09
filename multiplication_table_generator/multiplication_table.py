@@ -4,7 +4,7 @@ try:
 
     for i in range(1, max_multiplier + 1):
         result = number_to_generate * i
-        print(number_to_generate,"x", i, "=", result)
+        print(f"{number_to_generate} x {i} = {result}")
 
 except ValueError:
     print("Should be an integer")
