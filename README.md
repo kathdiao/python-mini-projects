@@ -45,6 +45,9 @@ All projects are terminal-based and focus on fundamental Python concepts like lo
 
 11. **Basic Dictionary Register Simulation**
     - Simulates a simple user registration using dictionaries with basic input validation.
+
+12. **ATM Simulator**
+    
 ---
 
 ## Notes
