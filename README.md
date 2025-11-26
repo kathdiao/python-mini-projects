@@ -47,13 +47,12 @@ All projects are terminal-based and focus on fundamental Python concepts like lo
     - Simulates a simple user registration using dictionaries with basic input validation.
 
 12. **ATM Simulator**
-    
+    - Simulates simple ATM using while loop and if else.
 ---
 
 ## Notes
 
 - All code is written for personal practice and learning.  
-- Comments are included in Taglish for easier understanding.  
-- Future plans: integrate some projects with basic front-end using Flask or Bootstrap.
+- Comments are included in Taglish for easier understanding.
 
 ---
