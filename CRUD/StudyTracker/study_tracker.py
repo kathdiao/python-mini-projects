@@ -1,17 +1,22 @@
 topics = []
 
 while True:
-    print("Select operation: \n1. Add Topic \n2. View Topic \n3. Edit Topic \n4. Delete Topic \n5. Exit")
+    print("Select operation: "
+          "\n1. Add Topic "
+          "\n2. View Topic "
+          "\n3. Edit Topic "
+          "\n4. Delete Topic "
+          "\n5. Exit")
+
     choice = input("Enter your choice: ")
+
     if choice == "1":
         topic = input("Enter topic: ")
-        #check if nag e exist na sya
-        if topic not in topics:
-            topics.append(topic)
-            print("Topic added successfully!")
+        if topic in topics:
+            print("Topic already exists")
         else:
-            print("That topic is already added")
-
+            topics.append(topic)
+            print("Topic added successfully")
     elif choice == "2":
         if not topics:
             print("No topics yet")
@@ -25,6 +30,7 @@ while True:
             print("No topics to edit")
         else:
             try:
+                #   access id
                 edited_topic = int(input("Enter topic id to edit: "))
                 #ichecheck kung valid ba yung number
                 if 1 <= edited_topic <= len(topics):
@@ -38,19 +44,18 @@ while True:
                 print("Enter valid topic id")
 
     elif choice == "4":
-        try:
-            if not topics:
-                print("No topics to delete")
+
+        if not topics:
+            print("No topics to delete")
+        else:
+            #   access name
+            delete = input("Enter topic you want to delete: ")
+
+            if delete in topics:
+                topics.remove(delete)
+                print("Topic deleted successfully!")
             else:
-                delete = int(input("Enter topic id you want to delete: "))
-                if 1 <= delete <= len(topics):
-                    #to delete yung correct topic
-                    index = topics.pop(delete - 1)
-                    print(f"'{index}' has been deleted.")
-                else:
-                    print("Invalid topic id")
-        except ValueError:
-            print("Enter valid topic id")
+                print("No such topic")
 
     elif choice == "5":
         break
