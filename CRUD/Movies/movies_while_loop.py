@@ -1,29 +1,34 @@
 movies = []
 while True:
-    print("Select Operations: \n1. Add movies \n2. View movies \n3. Edit movies \n4. Delete movies \n5. Exit")
+    print("Select Operations:"
+          "\n1. Add movies"
+          "\n2. View movies"
+          "\n3. Edit movies"
+          "\n4. Delete movies"
+          "\n5. Exit")
     choice = input("Enter Choice: ")
     if choice == "1":
-        movies.append(input("Enter movie name: "))
-        print("Movies added")
+        movie = input("Enter movie name: ")
+        if movie in movies:
+            print("Movies already exist")
+        else:
+            movies.append(movie)
+            print("Movies added successfully")
     elif choice == "2":
         if not movies:
             print("No movies yet")
         else:
             print("All movies: ")
-            counter = 1
-            for m in movies:
-                print(f" {counter}. {m}")
-                counter += 1
-                # manual way para mag display
+            for m, movie in enumerate(movies, start=1):
+                print(f"{m}. {movie}")
     elif choice == "3":
         if not movies:
             print("No movies yet")
         else:
             print("All movies: ")
-            counter = 1
-            for movie in movies:
-                print(f" {counter}. {movie}")
-                counter += 1
+
+            for m, movie in enumerate(movies, start=1):
+                print(f"{m}. {movie}")
 
             edit = int(input("Enter movie id to edit: "))
             if 1 <= edit <= len(movies):
@@ -37,8 +42,10 @@ while True:
             print("No movies yet")
         else:
             print("All movies: ")
+
             for i, m in enumerate(movies, start=1):
                 print(f"{i}. {m}")
+
             delete = int(input("Enter movie number to delete: "))
             if 1 <= delete <= len(movies):
                 removed = movies.pop(delete - 1)
