@@ -5,7 +5,7 @@ contacts = [
 ]
 
 while True:
-    print("\nSelect Operation:")
+    print("\nSelect Operation:") 
     print("1. Add Contact")
     print("2. View Contacts")
     print("3. Edit Contact")
