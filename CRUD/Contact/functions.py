@@ -34,10 +34,8 @@ def edit_contact():
     print(f"Contact {edit_name} does not exist")
 
 
-
 def delete_contact():
     user = input("What contact do you want to delete?: ")
-
 
     for contact in contacts:
         if contact["name"] == user.title():
