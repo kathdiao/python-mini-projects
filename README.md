@@ -48,6 +48,10 @@ All projects are terminal-based and focus on fundamental Python concepts like lo
 
 12. **ATM Simulator**
     - Simulates simple ATM using while loop and if else.
+
+13. **Note App**
+    - A basic note-taking application using file handling. 
+    - Allows users to create, read, and store notes persistently.
 ---
 
 ## Notes
