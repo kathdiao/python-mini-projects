@@ -9,20 +9,20 @@ def find_max(*numbers):
             max_num = n
     return max_num
 
-print(find_max(3, 7, 2, 9, 1))
+print(find_max(3, 9, 6, 2, 11, 23, 1))
 
 
-def my_function(*args):
+def args_access(*args):
     print("Type:", type(args))
     print("First argument:", args[0])
     print("Second argument:", args[1])
     print("All arguments:", args)
 
-my_function("Babi", "Kiwi", "Coli")
+args_access("Babi", "Kiwi", "Coli")
 
 
-def my_function(greeting, *names):
+def display(greeting, *names):
     for name in names:
         print(greeting, name)
 
-my_function("Hello", "Tench", "Drei", "Kiel")
+display("Hello", "Tench", "Drei", "Kiel")
