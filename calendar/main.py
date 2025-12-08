@@ -1,7 +1,7 @@
 import datetime
 import calendar
 
-class Calendar:
+class CalendarApp:
     def __init__(self):
         self.now = datetime.datetime.now()
 
@@ -12,10 +12,10 @@ class Calendar:
         return calendar.month(self.now.year, self.now.month)
 
 
-app = Calendar()
+app = CalendarApp()
 
 print("Date and Time:")
 print(app.get_datetime(), "\n")
 
-
+print("Calendar:")
 print(app.get_month_calendar())
