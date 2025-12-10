@@ -9,7 +9,7 @@ def find_max(*numbers):
             max_num = n
     return max_num
 
-print(find_max(3, 9, 6, 2, 11, 23, 1))
+print(find_max(4, 9, 6, 2, 11, 23, 1))
 
 
 def args_access(*args):
@@ -26,3 +26,14 @@ def display(greeting, *names):
         print(greeting, name)
 
 display("Hello", "Tench", "Drei", "Kiel")
+
+
+
+#   Arbitrary Arguments - **kwargs
+def my_function(username, **details):
+  print("Username:", username)
+  print("Additional details:")
+  for key, value in details.items():
+    print(f"{key}: {value}" )
+
+my_function("kath", age = 22, province= "zambales", hobby = "coding")
