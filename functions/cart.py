@@ -30,10 +30,19 @@ display("Hello", "Tench", "Drei", "Kiel")
 
 
 #   Arbitrary Arguments - **kwargs
-def my_function(username, **details):
+def kwargs(username, **details):
   print("Username:", username)
   print("Additional details:")
   for key, value in details.items():
     print(f"{key}: {value}" )
 
-my_function("kath", age = 22, province= "zambales", hobby = "coding")
+kwargs("kath", age = 22, province= "zambales", hobby = "coding")
+
+
+
+def args_kwargs(title, *args, **kwargs):
+  print("Title:", title)
+  print("Positional arguments:", args)
+  print("Keyword arguments:", kwargs)
+
+args_kwargs("User Info", "Aiah", "Fleur", age = 25, city = "Baguio")
