@@ -1,24 +1,35 @@
 print("Welcome to Quiz Game!")
-question = input("Do you want to play?")
-score = 0
+question = input("Do you want to play?: ")
 
 while True:
-    if question.lower() != "yes":
+    if question.lower() == "no":
         break
     else:
-        print("Let's play")
+        print("START")
 
-        answer = input("What does RAM stand for? ")
-        if answer.lower() == "random access memory":
-            score += 1
-            print("Correct!")
-            print(f"Score: {score}/5")
+        score = 0
 
-        else:
-            print("Incorrect! \nThanks for playing!")
-            print(f"Score: {score}/5")
-            break
+        attempts = 2
+        while attempts > 0:
+            print("Question 1")
+            answer1 = input("CMOS stands for?: ")
+            if answer1.lower() == "complementary metal-oxide-semiconductor":
+                score += 1
+                print("Correct!")
+                print(f"Score: {score}/5")
 
+                break
+
+            else:
+                print("Incorrect answer")
+                print("Hint: It is a small battery that powers the memory storing BIOS/UEFI settings.")
+                attempts -= 1
+                print(f"Total Score: {score}/5")
+
+        if attempts == 0:
+                break
+
+        print("\nQuestion 2")
         answer = input("What does ROM stand for? ")
         if answer.lower() == "read only memory":
             score += 1
