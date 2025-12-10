@@ -17,7 +17,6 @@ while True:
                 score += 1
                 print("Correct!")
                 print(f"Score: {score}/5")
-
                 break
 
             else:
@@ -40,6 +39,8 @@ while True:
             print(f"Score: {score}/5")
             break
 
+
+    print("\nQuestion 3")
     answer = input("What does CPU stand for? ")
     if answer.lower() == "central processing unit":
         score += 1
@@ -50,6 +51,7 @@ while True:
         print(f"Score: {score}/5")
         break
 
+    print("\nQuestion 4")
     answer = input("What does SSD stand for? ")
     if answer.lower() == "solid state drive":
         score += 1
@@ -60,6 +62,7 @@ while True:
         print(f"Score: {score}/5")
         break
 
+    print("\nQuestion 5")
     answer = input("What does HDD stand for? ")
     if answer.lower() == "hard disk drive":
         score += 1
